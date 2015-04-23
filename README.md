@@ -19,8 +19,8 @@
 - Never put JavaScript into Code Behind or any server side code. Never. Just don't do it. Ever.
   - If you see it somewhere, please fix it.
 - Use of jQuery `.data` function instead of `.attr` for any `data-property-name` attribute
-- Cache all jQuery objects in `this.controls` object; predefine it in `_init` function as `this.controls = {};`
-  - then later on you would do: `this.controls.mySelect = this.$element.find('select.mySelect');`
+- Cache all jQuery form elements in `this.controls` object; predefine it in `_init` function as `this.controls = {};`
+  - then later on you would do: `this.controls.mySelect = this.$element.find('select.my-select');`
 - Write JavaScript code as prototypes classes. Look at UsersControl.js, SystemInfo.js or PropertyInformation.js for help. Eventually we will move to ES6 modules, but this will help us with the transition.
 - Do not add global variables into the `DOM`. Add them as data properties to the root element of the prototype.
 - Use function `AddResource` in both `BaseUserControl` and `BaseCustomer` page to add resources (translations) to the client side. They will be available in `$.systemDefaults.resources.<nameSpace>.resourceName`
