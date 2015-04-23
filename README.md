@@ -14,7 +14,7 @@
   - Take advantage of linters in the repository for WebEssentials and ReSharper
   - Comma at the end of the line if you are splitting object or function definitions
   - Operator at the beginning of the line if you have a multi-line statement
-- Always palce JavaScript code into a separate JavaScript file, never inside html, aspx or ascx files
+- Always place JavaScript code into a separate JavaScript file, never inside html, aspx or ascx files
   - Use pods structure for placing files
 - Never put JavaScript into Code Behind or any server side code. Never. Just don't do it. Ever.
   - If you see it somewhere, please fix it.
@@ -38,8 +38,8 @@
 - Order CSS elements within a definition alphabetically. This improves visual recognition of what is there and is much easier to maintain. WebEssentials has a shortcut to do this for you
 - Use [ADC Components](http://alrm-web1-dev/adc-framework/adc.html) page when working with ADC specific components
 - Make sure your CSS cannot interfere and affect any other elements on the page
-  - For example rule label `{color: red;}` is very bad. It is going to affect all labels on the page, and it does not matter that you put this into separate file
-  - Try to put a defining class around the element you are working with. For example for 
+  - For example, `label {color: red;}` is very bad. It is going to affect all labels on the page, and it does not matter that you put this into separate file
+  - Try to put a defining class around the element you are working with. For example, for 
     `UsersControl` we have `users-control-wrap`. Then we can define any CSS for `UserControl` as `.users-control-wrap <identifier>` and it will only affect the elements that we want
 - Do not create one-off colors or styles. If it is not worth adding to the whole style and elements guide, then it should not be its own separate thing. Stay consistent with what we have and what we do. If you are not sure, ask.
 - Do not try to reinvent the wheel, [use helper classes instead](http://alrm-web1-dev/adc-framework/adc.html#helper-classes)
