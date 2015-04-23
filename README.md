@@ -1,6 +1,7 @@
 # Alarm.com Client Side Code Review Guidelines
 
 *Things to look for and check when developing and code reviewing client side code*
+###### If you have any questions, feel free to email mmiklo@alarm.com
 
 ## Javascript
 - Make sure to adhere to the [JavaScript Style Guide](https://github.com/mm2ha/javascript)
