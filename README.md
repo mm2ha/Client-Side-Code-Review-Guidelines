@@ -48,7 +48,7 @@
   - This will also help when we change the overall style as everything will get altered; if you are defining your own styles for the same CSS, that code will look very out of place
 
 <br/>
-## Web Services (Customer site)
+## Ajax Web Services (Customer site)
 
 - Extend ```BaseAjaxWebservice``` class
 - Check if there is a session if the web service needs it
