@@ -59,9 +59,11 @@
 - Good structure for webservices for one instance:
   - Get data webservice
     - Returns data to be displayed on the page
+        - Remember to localize strings
     - For example ```GetPropertyData()``` or ```GetTimezone()```
   - Validate data webservice
     - Performs validation on all inputs and returns parameter errors if necessary
+        - Remember to localize messages that may be displayed to users.
     - For example ```ValidatePropertyData()``` or ```ValidateTimezone()```
   - Set data webservice
     - Sets data back to the database through business objects based on the parameters
