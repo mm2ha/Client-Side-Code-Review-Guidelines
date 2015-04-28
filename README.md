@@ -50,6 +50,7 @@
 <br/>
 ## Web Services (Customer site)
 
+- Extend ```BaseAjaxWebservice``` class
 - Check if there is a session if the web service needs it
 - Check if the context has sufficient permissions for the action
 - Never assume anything about the input, always make sure you clean and validate
