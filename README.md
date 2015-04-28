@@ -67,6 +67,6 @@
     - Sets data back to the database through business objects based on the parameters
     - Can utilize validation by calling the validate data webservice to avoid code duplication
     - For example ```SetPropertyData()``` or ```SetTimezone()```
-- Always write unit tests for webservices. There is really not reason not to.
+- Always write unit tests for webservices. There is really no reason not to.
   - We have a super simple way to unit test web services
   - For example ```PropertyDataTest``` in AlarmUnitDbTest
