@@ -46,3 +46,24 @@
 - Do not create one-off colors or styles. If it is not worth adding to the whole style and elements guide, then it should not be its own separate thing. Stay consistent with what we have and what we do. If you are not sure, ask.
 - Do not try to reinvent the wheel, [use helper classes instead](http://alrm-web1-dev/adc-framework/adc.html#helper-classes)
   - This will also help when we change the overall style as everything will get altered; if you are defining your own styles for the same CSS, that code will look very out of place
+
+<br/>
+## Web Services (Customer site)
+
+- Check if there is a session if the web service needs it
+- Check if the context has sufficient permissions for the action
+- Never assume anything about the input, always make sure you clean and validate
+  - Always use DBHelper.ConvertDbSafe on any input parameter of type string
+  - Always validate all data against what we expect to receive
+- Good structure for webservices for one instance:
+  - Get data webservice
+    - Returns data to be displayed on the page
+    - For example ```GetPropertyData()``` or ```GetTimezone()```
+  - Validate data webservice
+    - Performs validation on all inputs and returns parameter errors if necessary
+    - For example ```ValidatePropertyData()``` or ```ValidateTimezone()```
+  - Set data webservice
+    - Sets data back to the database through business objects based on the parameters
+    - Can utilize validation by calling the validate data webservice to avoid code duplication
+    - For example ```SetPropertyData()``` or ```SetTimezone()```
+
