@@ -56,14 +56,22 @@
 - Never assume anything about the input, always make sure you clean and validate
   - Always use DBHelper.ConvertDbSafe on any input parameter of type string
   - Always validate all data against what we expect to receive
+- Always initialize the ```ResourceManager```
+  1. Override ```SetupResourceManager()```
+  2. Add: 
+  ```csharp
+        this.rm = 
+          new System.Resources.ResourceManager("FullyQualifiedNamespace.Resources.ClassName.asmx",
+          typeof (ClassName).Assembly);
+  ```
 - Good structure for webservices for one instance:
   - Get data webservice
     - Returns data to be displayed on the page
-        - Remember to localize strings
+        - Remember to localize strings via ```ResourceManager```
     - For example ```GetPropertyData()``` or ```GetTimezone()```
   - Validate data webservice
     - Performs validation on all inputs and returns parameter errors if necessary
-        - Remember to localize messages that may be displayed to users.
+        - Remember to localize messages that may be displayed to users  via ```ResourceManager```
     - For example ```ValidatePropertyData()``` or ```ValidateTimezone()```
   - Set data webservice
     - Sets data back to the database through business objects based on the parameters
