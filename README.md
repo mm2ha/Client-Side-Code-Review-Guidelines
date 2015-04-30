@@ -27,6 +27,7 @@
   - `nameSpace` is usually the name of the class with initial lower case letter. It can be overridden via `ResourceNameSpace`; all non-alphanumeric characters will always be removed and the first letter will be made lowercase
   - See [Resources / Translations / Localizations](https://github.com/mm2ha/javascript/blob/master/README.md#resourcesTranslations) section for a bit more detail
 - Make sure it passes JSHint and JSCS testing and does not throw any errors
+- Make sure functions are properly commented in the [JSDoc style](http://usejsdoc.org)
 - Use [ADC Components](http://alrm-web1-dev/adc-framework/adc.html) page when working with ADC specific components
 
 <br/>
