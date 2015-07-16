@@ -24,14 +24,6 @@
 
 ## Javascript
 - Make sure to adhere to the [JavaScript Style Guide](https://github.com/mm2ha/javascript). 
-  - Good working examples from the Customer Site that adhere to these styles are:
-    - CustomerDotNet/App_UserControls/UpdateBrowserAlert/...
-      - UpdateBrowserAlert.ascx
-      - UpdateBrowserAlert.css
-      - UpdateBrowserAlert.js
-    - CustomerDotNet/App_UserControls/RaygunControl/RaygunControl.js
-    - CustomerDotNet/Profile/PropertyInformation/PropertyInformation.js 
-    - CustomerDotNet/Profile/LoginInformation/LoginInformation.js
   - Especially look for proper function names
     - "public" functions: `myPublicFunctionName`
     - "private" functions: `_myPrivateFunctionsName`
