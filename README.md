@@ -1,15 +1,37 @@
 # Alarm.com Client Side Code Review Guidelines
 
 *Things to look for and check when developing and code reviewing client side code*
+
+*Reference examples of good code from the Customer Site include:*
+- **UpdateBrowserAlert** (*CustomerDotNet/App_UserControls/UpdateBrowserAlert/...*)
+  - UpdateBrowserAlert.ascx
+  - UpdateBrowserAlert.css
+  - UpdateBrowserAlert.js
+- **RaygunControl** (*CustomerDotNet/App_UserControls/RaygunControl/...*)
+  - RaygunControl.ascx
+  - RaygunControl.css
+  - RaygunControl.js
+- **PropertyInformation** (*CustomerDotNet/Profile/PropertyInformation/...*)
+  - PropertyInformation.aspx
+  - PropertyInformation.css
+  - PropertyInformation.js
+- **LoginInformation** (*CustomerDotNet/Profile/LoginInformation/...*)
+  - LoginInformation.aspx
+  - LoginInformation.css
+  - LoginInformation.js
+
 ###### If you have any questions, feel free to email mmiklo@alarm.com
 
 ## Javascript
 - Make sure to adhere to the [JavaScript Style Guide](https://github.com/mm2ha/javascript). 
-  - Good examples from the Customer Site that adhere to these styles are:
-    - UpdateBrowserAlert.js
-    - RaygunControl.js
-    - PropertyInformation.js 
-    - LoginInformation.js
+  - Good working examples from the Customer Site that adhere to these styles are:
+    - CustomerDotNet/App_UserControls/UpdateBrowserAlert/...
+      - UpdateBrowserAlert.ascx
+      - UpdateBrowserAlert.css
+      - UpdateBrowserAlert.js
+    - CustomerDotNet/App_UserControls/RaygunControl/RaygunControl.js
+    - CustomerDotNet/Profile/PropertyInformation/PropertyInformation.js 
+    - CustomerDotNet/Profile/LoginInformation/LoginInformation.js
   - Especially look for proper function names
     - "public" functions: `myPublicFunctionName`
     - "private" functions: `_myPrivateFunctionsName`
